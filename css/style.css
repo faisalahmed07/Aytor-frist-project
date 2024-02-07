@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:ital@0;1&display=swap');
+/* common css */
+
+
+:root {
+	--text-color: #11161e;
+	--blackBlue-color: #151a32;
+	--white-color: #fff;
+	--primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--secondary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;  
+    --primary-font: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,li,ol{
+    padding: 0;
+    margin: 0;
+}
+
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: var(--primary-font);
+    
+ }
+
+ a{
+     text-decoration: none;
+ }
+
+ ul,ol{
+     list-style: none;
+ }
+
+
+ /* common css end */
+
+ .navbar li a{
+    font-size: 18px;
+    color: var(--blackBlue-color);
+    transition: all 0.4s ease-in-out;
+ }
+
+ .navbar li:hover > a{
+    color: var(--primary-color);
+ }
+
+.dropdown li ul li {
+    opacity: 0;
+   
+    visibility: hidden;   
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    background: var(--background-color);
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown li:hover ul li{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    
+}
+
+.dropdown li ul{
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.dropdown li:hover ul{
+    top: 50px;
+}
+
+.dropdown li span i{
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.dropdown li ul{
+    position: absolute;
+    width: 250px;
+    top: -220px;
+}
+
+.dropdown li a:hover span i{
+  transform: rotate(180deg);
+}
+
+.linkForNav{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+   align-items: center;
+    
+}
+
+.linkForNav li a{
+    padding-left: 10px;
+}
+
+
+
+.left{
+    padding-right: 300px;
+}
+
+.d-screenHead{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navForSm button{
+    font-size: 23px;
+    border: none !important;
+    outline: none !important;
+    background: transparent;
+}
+
+
+
+.navForSm .linkForSm li a{
+    text-decoration: none;
+    color: var(--blackBlue-color);
+    display: flex;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.navForSm .linkForSm li {
+   list-style: none;
+}
+
+.offcanvas-body li {
+   list-style: none;
+   border-bottom: 1px solid #eee;
+   margin-left: -17px;
+   padding-bottom: 20px;
+   font-size: 20px;
+}
+
+.offcanvas-body a i{
+    color: var(--blackBlue-color);
+    padding-top: 20px;
+    text-align: left;
+}
+
+
+
